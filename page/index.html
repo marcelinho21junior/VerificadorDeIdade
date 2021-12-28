@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verificador de Idade</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <header>
+        <h1>VERIFICADOR DE IDADE</h1>
+    </header>
+    <div class="card">
+        <div>
+            <h3>Ano de Nascimento:<input id="nascText" type="text"> </h3>
+        </div>
+        <div>
+            <h3>Sexo:<input type="radio" name="radsex" id="masc" checked>
+                <label for="masc">Masculino</label>
+                <input type="radio" name="radsex" id="fem">
+                <label for="fem">Feminino</label> 
+            </h3>
+            <button onclick="verificar()">VERIFICAR</button>
+            <H3 id="res">preencha todos os dados acima para ver o resultado</H3>
+        </div>
+    </div>
+    <footer>
+        <h1>&copy;Marcelo Junior!</h1>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
