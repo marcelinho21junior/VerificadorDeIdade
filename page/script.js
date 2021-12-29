@@ -8,7 +8,8 @@ function verificar(){
         window.alert('ERRO, verifique os dados e tente novamente!')
         res.innerHTML = `UNDEFINED`
     }else{
-        var img = document.getElementById("img")
+        var img = document.createElement("img")
+        img.setAttribute('id','foto')
         var idade = ano - (nasc.value)
         var fsex = document.getElementsByName("radsex")
         var genero = ''
@@ -16,7 +17,7 @@ function verificar(){
             genero = 'Homem'
             if(idade >=0 && idade < 10){
                 //criança
-                img.setAttribute('src','')
+                img.setAttribute('src','criancahomem.png')
             }else if(idade >= 21){
                 //jovem
                 img.setAttribute('src','')
@@ -46,5 +47,6 @@ function verificar(){
         }
         
         res.innerHTML = `Detectamos ${genero} com Idade: ${idade} anos`
+        res.appendChild(img)
     }
 }
